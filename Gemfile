@@ -4,7 +4,15 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development, :test do
+     gem 'sqlite3'
+end
+
+group :production do
+     gem 'pg'
+     gem 'rails_12factor'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -50,7 +58,7 @@ gem 'acts_as_votable', github: 'ryanto/acts_as_votable'
 gem 'google-analytics-rails'
 gem 'rails_config'
 gem 'activeadmin', github: 'gregbell/active_admin'
-gem 'devise'
+gem 'devise', '~> 3.2.4'
 gem 'omniauth'
 gem 'omniauth-facebook'
 
