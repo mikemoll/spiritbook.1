@@ -1,2 +1,10 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+
+<div class="jumbotron center">
+<h1><font color="red">Namaste and Welcome to SpiritBook</font></h1>
+<p>Spirit Book is a place to share stories from your spiritual journey Channelings, meditations, poems, rants, dreams, wishes, prayers and anything else you feel expresses your highest self and honour your highest vibration.
+</p>
+<% if user_signed_in? %> 
+<% else %> 
+<p> Click here to <%= link_to "Start Sharing Now", new_user_registration_path, class: "btn btn-primary" %> Or <%= link_to "Login",  new_user_session_path, class: "btn btn-primary" %></p>
+<% end %>
+</div>
