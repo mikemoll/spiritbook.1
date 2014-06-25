@@ -16,17 +16,6 @@ GIT
       sass-rails
 
 GIT
-  remote: git://github.com/plataformatec/devise.git
-  revision: b6af1675d5b4123b2481dd2630fe5197829994ec
-  specs:
-    devise (3.2.4)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
-      thread_safe (~> 0.1)
-      warden (~> 1.2.3)
-
-GIT
   remote: git://github.com/ryanto/acts_as_votable.git
   revision: bf6104266406967f99667da407b8f21f1a28831b
   specs:
@@ -93,6 +82,12 @@ GEM
     delayed_job_active_record (4.0.1)
       activerecord (>= 3.0, < 4.2)
       delayed_job (>= 3.0, < 4.1)
+    devise (3.2.4)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     dotenv (0.11.1)
       dotenv-deployment (~> 0.0.2)
     dotenv-deployment (0.0.2)
@@ -239,7 +234,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   delayed_job
   delayed_job_active_record
-  devise!
+  devise
   dotenv-rails
   google-analytics-rails
   jbuilder (~> 2.0)
