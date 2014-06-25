@@ -1,8 +1,10 @@
 
 <div class="jumbotron center">
 <h1><font color="red">Namaste and Welcome to SpiritBook</font></h1>
-<p>Spirit Book is a place to share stories from your spiritual journey Channelings, meditations, poems, rants, dreams, wishes, prayers and anything else you feel expresses your highest self and honour your highest vibration.
-</p>
+<p>Spirit Book is a place to share stories from your spiritual journey:</p>
+<p> Channelings, Meditations, Poems, Rants, Dreams, Wishes, Prayers and anything else. </p>
+<p>Express your highest self.</p> 
+<p>Connects you to your highest vibration.</p>
 <% if user_signed_in? %> 
 <% else %> 
 <p> Click here to <%= link_to "Start Sharing Now", new_user_registration_path, class: "btn btn-primary" %> Or <%= link_to "Login",  new_user_session_path, class: "btn btn-primary" %></p>
