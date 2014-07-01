@@ -1,0 +1,1 @@
+Rails.application.config.assets.precompile += %w( Flat-UI-Icons-16.eot )

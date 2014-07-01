@@ -13,6 +13,7 @@
 *= require_tree .
 *= stub active_admin
 *= require_self
+ *= require 'masonry/transitions'
 */
 @import "bootstrap_configuration";
 
