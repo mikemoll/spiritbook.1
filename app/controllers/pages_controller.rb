@@ -3,5 +3,7 @@ class PagesController < ApplicationController
   end
   def donate
   end
+  def launch 
+end 
 end
 

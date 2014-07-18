@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'pages/index'
   get "donate" => "pages#donate"
+  get "launch" => "pages#launch"
 
   resources :photos do
   #->Prelang (voting/acts_as_votable)
