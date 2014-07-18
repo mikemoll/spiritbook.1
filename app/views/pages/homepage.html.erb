@@ -1,0 +1,17 @@
+
+<div class="jumbotron center">
+<h1><font color="red">Namaste and Welcome to SpiritBook</font></h1>
+<p>Spirit Book is a place to share stories from your spiritual journey:</p>
+<p> Channelings, Meditations, Poems, Rants, Dreams, Wishes, Prayers and anything else. </p>
+<p>Express your highest self.</p> 
+<p>Connects you to your highest vibration.</p>
+<!-- Begin LaunchRock Widget -->
+<div id="lr-widget" rel="76VRHM35"></div>
+<script type="text/javascript" src="//ignition.launchrock.com/ignition-current.min.js"></script>
+<!-- End LaunchRock Widget -->
+<% if user_signed_in? %> 
+<% else %> 
+
+<p> Click here to <%= link_to "Start Sharing Now", new_user_registration_path, class: "btn btn-primary" %> Or <%= link_to "Login",  new_user_session_path, class: "btn btn-primary" %></p>
+<% end %>
+</div>
